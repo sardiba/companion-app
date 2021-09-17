@@ -1,0 +1,15 @@
+:root {
+  --bg-color-body: #e0e4e8;
+  --bg-color-HF: #f8f8f8;
+  --font-color: #193251;
+  --font-color-table: #7589a2;
+  --color-rating-100: #ff5a36;
+  --color-rating-75: #ff9c86;
+  --color-rating-50: #ffbdaf;
+  --color-rating-25: #ffded7;
+  --border-thin: 1px solid #e0e4e8;
+  --border-thick: 1px solid #7589a2;
+  --box-shadow-grey: 0px 2px 11px rgba(25, 50, 81, 0.2);
+  --box-shadow-tangerine: 0px 4px 10px rgba(255, 90, 54, 0.4);
+  --border-radius: 10px;
+}

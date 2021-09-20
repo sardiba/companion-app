@@ -1,8 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 375px;
+  height: 711px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+/* -------------------------
+----------------------------
+STYLING DER CODEBUDDY SEITE 
+----------------------------
+----------------------------*/
 :root {
   --bg-color-body: #e0e4e8;
   --bg-color-HF: #f8f8f8;
   --font-color: #193251;
   --font-color-table: #7589a2;
+  --font-size-table: 16px;
+  --font-weight-table: bold;
+  --font-family: Open sans;
   --color-rating-100: #ff5a36;
   --color-rating-75: #ff9c86;
   --color-rating-50: #ffbdaf;
@@ -14,23 +36,48 @@
   --border-radius: 10px;
 }
 
-.buddietable {
+.buddyContainer {
+  margin: 114px 70px 114px 70px;
+}
+
+ul {
   display: flex;
-  border-radius: 8px;
-  border: var(--border-thick);
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background: white;
-  height: 116px;
-  margin-bottom: 1vh;
   position: relative;
+  width: 100%;
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-bottom: 20px;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  border: var(--border-thick);
   color: var(--font-color-table);
-  margin-left: 7vw;
-  margin-right: 7vw;
+  font-size: var(--font-size-table);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-table);
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+
+.codeBudTop {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.codeBudBottom {
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .plusIcon {
   position: absolute;
+  top: 41%;
+  left: 45%;
   content: url(/images/plusIcon.png);
 }

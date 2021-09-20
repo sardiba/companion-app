@@ -12,11 +12,10 @@ body {
   height: 100%;
   margin: 0px;
 }
-/* -------------------------
-----------------------------
-STYLING DER CODEBUDDY SEITE 
-----------------------------
-----------------------------*/
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonts/OpenSans-Regular.ttf);
+}
 :root {
   --bg-color-body: #e0e4e8;
   --bg-color-HF: #f8f8f8;
@@ -80,4 +79,94 @@ li {
   top: 41%;
   left: 45%;
   content: url(/images/plusIcon.png);
+}
+h2 {
+  font-family: "Open Sans", "sans serif";
+  color: var(--font-color);
+  font-size: 18px;
+  margin-top: 50px;
+}
+h3 {
+  font-family: "Open Sans";
+  color: var(--font-color-table);
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 25px;
+}
+p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: lighter;
+}
+.motto-text {
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+.journal {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+label {
+  color: var(--font-color);
+  font-size: 16px;
+}
+textarea {
+  display: flex;
+  border: var(--border-thin);
+  border-radius: 3px;
+  resize: none;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.orange-button {
+  background-color: var(--color-rating-100);
+  color: #fff;
+}
+.white-button {
+  background-color: #fff;
+  color: var(--font-color);
+}
+button {
+  width: 40vw;
+  border: none;
+  padding: 2vw;
+  border-radius: 3px;
+  margin-top: 4vw;
+  text-align: center;
+}
+.button-top {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rate-today-button {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rating-star {
+  display: flex;
+  gap: 2vw;
+  list-style-type: none;
+}
+.comprehension-box {
+  display: flex;
+  gap: 1vw;
+  list-style-type: none;
+}
+#star-in-button {
+  width: 3vw;
+  padding-left: 1vw;
+}
+.motto-text::before {
+  content: '"';
+}
+.motto-text::after {
+  content: '"';
 }

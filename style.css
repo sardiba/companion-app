@@ -12,10 +12,6 @@ body {
   height: 100%;
   margin: 0px;
 }
-@font-face {
-  font-family: "OpenSans";
-  src: url(fonts/OpenSans-Regular.ttf);
-}
 :root {
   --bg-color-body: #e0e4e8;
   --bg-color-HF: #f8f8f8;
@@ -169,4 +165,51 @@ button {
 }
 .motto-text::after {
   content: '"';
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import "base.css";
+
+.TeamsContainer {
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+}
+.Team {
+  position: relative;
+  text-align: center;
+  list-style: none;
+}
+.Name,
+.NameTop,
+.NameBottom {
+  color: var(--font-color);
+  display: block;
+  padding: 1em;
+  border: var(--border-thin);
+  font-family: var(--font-body-large);
+}
+.NameTop {
+  border-radius: 6px 6px 0px 0px;
+}
+.NameBottom {
+  border-radius: 0px 0px 6px 6px;
+}
+.Team1Header,
+.Team2Header {
+  color: var(--font-color);
+  font-size: 14px;
+  line-height: 16px;
+  position: absolute;
+  font-family: var(--font-headline-uppercase);
+}
+.Team1Header {
+  position: absolute;
+  top: 4em;
+  left: 8em;
+}
+
+.Team2Header {
+  position: absolute;
+  top: 25em;
+  left: 8em;
 }
